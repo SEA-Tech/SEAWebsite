@@ -40,7 +40,18 @@
         max-width: 200px; /* Set a maximum width if necessary */
          /* Adjust the scale factor (less than 1 to zoom out) */
     }
-        
+    @media (max-width: 767px) {
+        .vide-container {
+            max-width: 100%; /* Set a maximum width for the video container on mobile screens */
+            margin-top: 80px;
+            
+        }
+
+        .vide-container iframe {
+            width: 100%; /* Set the width to 100% for mobile screens */
+            height: 600px;
+        }
+    }
         </style>
         
 
@@ -137,6 +148,7 @@
                                 
                             </div>
 
+
                             <div class="col-lg-5 col-12 position-relative" style="margin-top: 100px; margin-left: -245px;">
                                 <div class="hero-image-wrap" style="background-color: transparent; margin-bottom: 350px;">
                                     <iframe src="test.html" width="800" height="800" style="border: none;  "></iframe>
@@ -161,9 +173,9 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-6 col-12">
+                        <!-- <div class="col-lg-6 col-12">
                           <div class="vide-container"><iframe width="560" height="780" src="https://www.youtube.com/embed/N8M2fINacYc?si=ihJ5lWz8V_uYUuEA" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-                        </div>
+                        </div> -->
 
                         <div class="col-lg-6 col-12 mt-5 mt-lg-0">
                             <div class="about-thumb">
@@ -188,6 +200,9 @@
                             
                             </div>
                         </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="vide-container"><iframe width="560" height="780" src="https://www.youtube.com/embed/N8M2fINacYc?si=ihJ5lWz8V_uYUuEA" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                          </div>
 
                     </div>
                 </div>
